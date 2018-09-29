@@ -1,3 +1,24 @@
+# Lab 2: Timer A Blink
+
+## Summary
+ There are two programs made for two different boards the MSP430F5529 and the MSP430G2553. These programs use two different timers to blink two different LEDs at different speeds.
+
+## General Functionality
+ The two programs were written to switch between two LEDs using an interrupt. The two different timer's capture control registers are set to two different clock cycles.
+## Inputs and Outputs
+
+### MSP430F5529
+ INPUTS: Not used
+ OUTPUTS: P1.0-Red LED, P4.7-Green LED
+ 
+### MSP430G2553
+ INPUTS: Not used 
+ OUTPUTS: P1.0-Green LED, P1.6-Red LED
+ 
+## Authors
+   Author: Kieran O'Connor  
+   Last Editted: 9/28/2018
+   
 # TIMER A Blink
 The TIMER peripherals can be used in many situations thanks to it flexibility in features. For this lab, you will be only scratching the surface as to what this peripheral can do. 
 
