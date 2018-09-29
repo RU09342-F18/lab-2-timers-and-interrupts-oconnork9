@@ -1,4 +1,4 @@
-# Lab 1: Button Based Delay
+# Lab 2: Button Based Delay
 
 ## Summary
  There are two programs made for two different boards the MSP430F5529 and the MSP430G2553. Each of the programs start with a standard blinking light with a certain speed with a button that can be held down to set the LED to blink at a different rate equivalent to the length the user holds the button.
