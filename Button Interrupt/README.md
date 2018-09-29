@@ -1,3 +1,25 @@
+# Lab 2: Button Interrupt
+
+## Summary
+ There are two programs made for two different boards the MSP430F5529 and the MSP430G2553. These programs both switch between two LEDs when pressed.
+
+## General Functionality
+ The two programs were written to switch between two LEDs using an interrupt. Whenever the button is pressed the interrupt is activate it toggles both buttons to switch the value of the pins and clears the flag waiting for the button to be activated again.
+ 
+## Inputs and Outputs
+
+### MSP430F5529
+ INPUTS: P1.1-Tactile Button
+ OUTPUTS: P1.0-Red LED, P4.7-Green LED
+ 
+### MSP430G2553
+ INPUTS: P1.3-Button  
+ OUTPUTS: P1.0-Green LED, P1.6-Red LED
+ 
+## Authors
+   Author: Kieran O'Connor  
+   Last Editted: 9/19/2018
+   
 # Button Interrupt
 Last lab you were introduced to the idea of "Polling" where in you would constantly check the status of the P1IN register to see if something has changed. While your code may have worked, it ends up spending a ton of time just checking something that has not changed. What we can do instead is use another two registers available to us from the GPIO peripheral, P1IE and P1IES, to allow our processor to just chill out and wait until something happens to act upon it. Without spending too much space on this README with explanations, what makes these interrupts tick is the following code:
 
